@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lost & Found</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url('https://img.freepik.com/free-vector/abstract-technological-background_23-2148897676.jpg?t=st=1745601119~exp=1745604719~hmac=a7bc328392efabbdd562f8ae34ee060bed5ddc926a091720c84e7af85e99fa89&w=1380') no-repeat;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+    }
+    label, input, textarea, select {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      font-size: 16px;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+    textarea {
+      resize: none;
+      height: 100px; /* you can adjust height as needed */
+    }
+    button {
+      padding: 10px;
+      background: #28a745;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .note {
+      font-size: 0.9em;
+      color: gray;
+      margin-top: -8px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Register your lost item</h1>
+    <form id="lostForm">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="item">Lost Item Name:</label>
+      <input type="text" id="item" name="item" required>
+
+      <label for="category">Item Category:</label>
+      <select id="category" name="category" required>
+        <option value="">Select the category</option>
+        <option value="electronics">Electronics</option>
+        <option value="clothing">Clothing</option>
+        <option value="documents">Documents</option>
+        <option value="accessories">Accessories</option>
+        <option value="others">Others</option>
+      </select>
+
+      <label for="description">Description:</label>
+      <textarea id="description" name="description" minlength="200" required></textarea>
+      <div class="note">* Minimum 200 characters required.</div>
+
+      <label for="location">Last Seen Location:</label>
+      <input type="text" id="location" name="location" required>
+
+      <label for="photo">Upload Photo:</label>
+      <input type="file" id="photo" name="photo" accept="image/*" required>
+
+      <button type="submit">Report Lost Item</button>
+    </form>
+  </div>
+</body>
+</html>
