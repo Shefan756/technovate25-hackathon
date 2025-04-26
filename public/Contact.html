@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lost and Found at KMCE - Login</title>
+  <script type="module" src="script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://img.freepik.com/free-vector/network-mesh-wire-digital-technology-background_1017-27428.jpg?t=st=1745647495~exp=1745651095~hmac=d3aae4254fb28421ddc4aba057a6d1351beb968f97b8ca1b1422ededb026699b&w=1380') no-repeat;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        label, input, p {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+            font-size: 16px;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        input[type="text"] {
+            width: calc(100% - 16px); /* Adjust for padding */
+        }
+        .note {
+            font-size: 1em;
+            color: rgb(0, 0, 0);
+            margin-top: -8px;
+            margin-bottom: 10px;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+            background:transparent;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+    <div>
+        <h1>Contact Us</h1>
+        <form>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Contact us on:</label>
+            <p id="email">><a href="mailto:lostandfoundkmce@gmail.com">lostandfoundkmce@gmail.com</a></p>
+            <a href="index.html" class="login-link">GO Back =></a>
+        </form>
+        <p class="note">Note: We will get back to you as soon as possible.</p>
+    </div>
+</body>

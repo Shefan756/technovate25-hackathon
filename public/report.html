@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Report Lost Item - KMCE</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 0;
+      padding: 20px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px 0;
+      background: #007BFF;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #0056b3;
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background: #f9f9f9;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2 class="logo">Lost & Found System</h2>
+    <nav class="navigation">
+      <a href="index.html">Login</a>
+      <a href="home.html">Lost Items</a>
+      <a href="Contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main style="padding: 2rem;">
+    <h1>Report a Lost Item</h1>
+    <form id="reportForm">
+      <!-- Updated field names to match the script.js logic -->
+      <label for="itemName">Item Name:</label>
+      <input type="text" id="itemName" name="itemName" placeholder="Enter the item name" required />
+
+      <label for="itemDescription">Description:</label>
+      <textarea id="itemDescription" name="itemDescription" rows="4" placeholder="Enter a brief description" required></textarea>
+
+      <label for="itemImage">Upload Image:</label>
+      <input type="file" id="itemImage" name="itemImage" accept="image/*" required />
+
+      <button type="submit" class="btn">Submit Report</button>
+    </form>
+  </main>
+</body>
+</html>

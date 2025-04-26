@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lost Items - KMCE</title>
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="script.js"></script>
+  <style>
+    .item-card img { border-radius: 8px; }
+    #claimModal {
+      position: fixed;
+      top: 20%;
+      left: 30%;
+      width: 40%;
+      background: #9f5050;
+      padding: 20px;
+      border: 2px solid #333;
+      z-index: 1000;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      margin: 10px;
+      background: #2ed0db;
+      color: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #0056b3;
+    }
+    .h{
+      color: #000000;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2 class="logo">Lost & Found System</h2>
+    <nav class="navigation">
+      <a href="index.html">Login</a>
+      <a href="Contact.html">Contact Us</a>
+      <div id="lost-items-container" class="items-grid">
+      </div>
+      
+    </nav>
+  </header>
+
+  <main style="padding: 2rem;">
+    <h1 class="h">Welcome to KMCE Lost & Found</h1>
+    <button id="seeItemsBtn" class="btn" onclick="window.location.href='see.html'">See Lost Items</button>
+    <button id="reportItemBtn" class="btn" onclick="window.location.href='report.html'">Report a Lost Item</button>
+    <div id="itemsContainer" style="margin-top: 2rem;"></div>
+  </main>
+</body>
+</html>
